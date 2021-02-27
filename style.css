@@ -1,0 +1,255 @@
+body,html{
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1468077218827-c65e763b0e32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+}
+
+/* ..........utils.................. */
+
+.button{
+    background-color: #e07f24;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    padding: 4px 4px;
+}
+
+.tc{
+    text-align: center;
+}
+
+/* ..................navbar.......................... */
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    background-color: #323332;
+    height: 60px;
+}
+
+nav p{
+    font-size: 2rem;
+}
+
+.navlist{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
+
+.navlist li{
+    margin: 0 20px;
+}
+
+.navlist li a{
+    color: white;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.navlist li a:hover{
+    text-decoration: underline;
+}
+
+/* ...................home section.......................... */
+.tagline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    height: 90vh;
+    color: white;
+}
+
+
+
+/* ..............................menu section...................... */
+.menu{
+    margin: 60px 0;
+    color: white;
+    overflow: hidden;
+}
+.menu-heading{
+    margin-bottom: 20px;
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.menu-description{
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    text-align: center; 
+    color: white;  
+}
+
+.menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    cursor: pointer;
+    position: relative;
+    width: 360px;
+    height: 360px;
+    transition: 0.3s ease-out;
+    box-shadow: 0 3px 15px rgba(0,  0, 0, .7);
+    text-align: center;
+    margin: 0 20px;
+}
+
+.card .imgBox{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: 0.5s;
+}
+
+.card .content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 6px;
+    width: 100%;
+    height: 80px;
+    background: #e07f24;
+    opacity: .9;
+    transition: all 0.5s cubic-bezier(.48,-0.28,0.41,1.4);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card:hover .content{
+    width: 100%;
+    height: 80%;
+    left: 0;
+    bottom: 0;
+}
+
+.content p{
+    margin: 10px 0 0;
+    transform: translateY(2em);
+    line-height: 1.3em;
+    transition: justify;
+    opacity: 0;
+}
+.card:hover .content p{
+    transform: translateY(0);
+    opacity: 1;
+}
+.card:hover{
+    transform: scale(1.08);
+    box-shadow: 0 3px 1.2em rgba(0,  0, 0, 1.5);
+}
+
+/* ..................about section...................... */
+
+.about{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+.about img{
+    height: 400px;
+    width: 400px;
+}
+
+.about-text{
+    padding-left: 5%;
+}
+
+.about-img{
+    padding-right: 5%;
+}
+
+.about h1{
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.about p{
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.aboutimg{
+    object-fit:cover;
+}
+
+footer{
+    color: white;
+    font-size: 1.3rem;
+    margin:0;
+    padding: 10px 0;
+    background-color: #323332;
+}
+
+/* .............contact form ................. */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 4rem;
+    margin: 50px 0;
+}
+
+.contactform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.contactform input{
+    font-size: 1.4rem;
+    background: rgba(255, 255, 255, 0);
+    outline: none;
+    border: 2px solid white;
+    border-radius: 4px;
+    color:white;
+    width: 340px;
+}
+
+.contactform textarea{
+    font-size: 1.7rem;
+    background: rgba(255, 255, 255, 0);
+    outline: none;
+    border: 2px solid white;
+    border-radius: 4px;
+    width: 340px;
+    color:white;
+}
